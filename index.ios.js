@@ -9,6 +9,7 @@ import { Tabs, Tab, Icon } from 'react-native-elements'
 
 import First from './app/Headers/Header';
 import Home from './app/Home/HomeContainer';
+import Yardage from './app/Yardage/YardageContainer';
 
 export default class Western extends Component {
 
@@ -47,7 +48,7 @@ export default class Western extends Component {
                     renderIcon={() => <Icon style={styles.iconContainer} color={'#5e6977'} name='golf-course' size={33} />}
                     renderSelectedIcon={() => <Icon color={'#6296f9'} name='golf-course' size={30} />}
                     onPress={() => this.changeTab('yardage')}>
-                    <First/>
+                    <Yardage/>
                 </Tab>
                 <Tab
                     titleStyle={styles.title}

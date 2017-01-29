@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
 import {
-    View,
-    Text,
     Navigator,
     Image,
     StyleSheet
@@ -14,12 +12,12 @@ export default class Header extends Component {
 
     render() {
         return (
-                <NavigationBar
-                    title={<Image
-                            source={require('./../Images/logo.png')}
-                            style={styles.image}
-                            /> }
-                />
+            <NavigationBar
+                title={<Image
+                    source={require('./../Images/logo.png')}
+                    style={styles.image}
+                    /> }
+            />
         );
     }
 }
