@@ -7,7 +7,7 @@ import {
 
 import { Tabs, Tab, Icon } from 'react-native-elements'
 
-import First from './app/Components/First';
+import First from './app/Headers/Header';
 
 export default class Western extends Component {
 
