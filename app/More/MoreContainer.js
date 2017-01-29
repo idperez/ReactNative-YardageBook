@@ -8,13 +8,13 @@ import {
 
 import Header from './../Headers/Header';
 
-export default class EatContainer extends Component {
+export default class MoreContainer extends Component {
 
     render() {
         return (
             <View style={styles.container}>
                 <Header/>
-                <Text>Eat Page.</Text>
+                <Text>More Page.</Text>
             </View>
         );
     }
@@ -26,4 +26,5 @@ const styles = StyleSheet.create({
         backgroundColor: '#2c3e50'
     }
 });
+
 

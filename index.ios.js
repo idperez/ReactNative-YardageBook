@@ -7,10 +7,10 @@ import {
 
 import { Tabs, Tab, Icon } from 'react-native-elements'
 
-import First from './app/Headers/Header';
 import Home from './app/Home/HomeContainer';
 import Yardage from './app/Yardage/YardageContainer';
 import Eat from './app/Eat/EatContainer';
+import More from './app/More/MoreContainer';
 
 export default class Western extends Component {
 
@@ -69,7 +69,7 @@ export default class Western extends Component {
                     renderIcon={() => <Icon style={styles.iconContainer} color={'#5e6977'} name='list' size={33} />}
                     renderSelectedIcon={() => <Icon color={'#6296f9'} name='list' size={30} />}
                     onPress={() => this.changeTab('more')}>
-                    <First/>
+                    <More/>
                 </Tab>
             </Tabs>
         )
