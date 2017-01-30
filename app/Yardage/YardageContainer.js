@@ -7,8 +7,10 @@ import {
 } from 'react-native';
 
 import YardageHeader from './../Headers/YardageHeader';
+
 import Hole from './Hole';
 import Yardage from './Yardage';
+import Tee from './Tee';
 
 import { Text, Card, Grid, Col } from 'react-native-elements'
 
@@ -21,33 +23,7 @@ export default class YardageContainer extends Component {
                     <YardageHeader/>
                     <Hole/>
                     <Yardage/>
-                    <Card
-                        title="Tee Distance">
-                        <Grid>
-                            <Col>
-                                <Text style={styles.championship} h3 >
-                                    375
-                                </Text>
-                            </Col>
-                            <Col>
-                                <Text style={styles.middle} h3 >
-                                    365
-                                </Text>
-                            </Col>
-                        </Grid>
-                        <Grid>
-                            <Col>
-                                <Text style={styles.forward} h3 >
-                                    300
-                                </Text>
-                            </Col>
-                            <Col>
-                                <Text style={styles.junior} h3 >
-                                    290
-                                </Text>
-                            </Col>
-                        </Grid>
-                    </Card>
+                    <Tee/>
                     <Card
                         title="Handicap">
                         <Grid>
@@ -103,34 +79,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontWeight: 'bold',
         fontStyle: 'italic'
-    },
-    championship: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontStyle: 'italic',
-        marginBottom: 20,
-        color: '#2c3e50'
-    },
-    middle: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontStyle: 'italic',
-        marginBottom: 20,
-        color: '#FFC107'
-    },
-    forward: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontStyle: 'italic',
-        marginBottom: 20,
-        color: '#FF5722'
-    },
-    junior: {
-        textAlign: 'center',
-        fontWeight: 'bold',
-        fontStyle: 'italic',
-        marginBottom: 20,
-        color: '#00BCD4'
     },
     circle: {
         width: 40,
