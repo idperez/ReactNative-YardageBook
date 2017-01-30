@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 
 import YardageHeader from './../Headers/YardageHeader';
+import Hole from './Hole';
 
 import { Text, Card, Grid, Col } from 'react-native-elements'
 
@@ -17,26 +18,9 @@ export default class YardageContainer extends Component {
             <ScrollView keyboardShouldPersistTaps="always" style={styles.container}>
                 <View>
                     <YardageHeader/>
-                    <Grid>
-                        <Col>
-                            <Card
-                                title='Hole'>
-                                <Text style={styles.holeData} h3 >
-                                    1
-                                </Text>
-                            </Card>
-                        </Col>
-                        <Col>
-                            <Card
-                                title='Par'>
-                                <Text style={styles.holeData} h3 >
-                                    3
-                                </Text>
-                            </Card>
-                        </Col>
-                    </Grid>
+                    <Hole/>
                     <Card
-                        title="Yardage From Hole">
+                        title="Yardage From Green">
                         <Grid>
                             <Col>
                                 <Text style={styles.yardageLocation} >

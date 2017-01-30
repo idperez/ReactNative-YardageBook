@@ -13,8 +13,6 @@ import Header from './../Headers/Header';
 
 import { SocialIcon, Card, Button } from 'react-native-elements'
 
-
-
 export default class HomeContainer extends Component {
 
     render() {
