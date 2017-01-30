@@ -8,6 +8,7 @@ import {
 
 import YardageHeader from './../Headers/YardageHeader';
 import Hole from './Hole';
+import Yardage from './Yardage';
 
 import { Text, Card, Grid, Col } from 'react-native-elements'
 
@@ -19,43 +20,7 @@ export default class YardageContainer extends Component {
                 <View>
                     <YardageHeader/>
                     <Hole/>
-                    <Card
-                        title="Yardage From Green">
-                        <Grid>
-                            <Col>
-                                <Text style={styles.yardageLocation} >
-                                    Front
-                                </Text>
-                            </Col>
-                            <Col>
-                                <Text style={styles.yardageLocation} >
-                                    Middle
-                                </Text>
-                            </Col>
-                            <Col>
-                                <Text style={styles.yardageLocation} >
-                                    Front
-                                </Text>
-                            </Col>
-                        </Grid>
-                        <Grid>
-                            <Col>
-                                <Text style={styles.holeData} h3 >
-                                    324
-                                </Text>
-                            </Col>
-                            <Col>
-                                <Text style={styles.holeData} h3 >
-                                    234
-                                </Text>
-                            </Col>
-                            <Col>
-                                <Text style={styles.holeData} h3 >
-                                    342
-                                </Text>
-                            </Col>
-                        </Grid>
-                    </Card>
+                    <Yardage/>
                     <Card
                         title="Tee Distance">
                         <Grid>
