@@ -8,7 +8,7 @@ import {
 
 import YardageHeader from './../Headers/YardageHeader';
 
-import { Text, Card, ListItem, Grid, Col, Row } from 'react-native-elements'
+import { Text, Card, Grid, Col } from 'react-native-elements'
 
 export default class YardageContainer extends Component {
 

@@ -11,7 +11,7 @@ import {
 
 import Header from './../Headers/Header';
 
-import { SocialIcon, Card, ListItem, Button } from 'react-native-elements'
+import { SocialIcon, Card, Button } from 'react-native-elements'
 
 
 
